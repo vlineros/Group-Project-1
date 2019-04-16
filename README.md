@@ -1,11 +1,9 @@
 # Group-Project-1
 
-hand-eye game
+auto populated array of search params, that uses google maps API 
 
-music concerts in your area
+link to the event info/tickets from the google API 
 
-something related to our jobs?
+create google maps layout with directions to a selected event
 
-Use of some Google API?
-
-list of events based on pre deffined array of items 
+******* link those directions with the lyft API *******
