@@ -11,6 +11,7 @@ create google maps layout with directions to a selected event
 look into direct links to lyft/uber to avoid using lyfts stand alone API
 
 *******link those directions with the lyft API?*******
+
 *******Preventing crude buttons from being created?*******
 
 
