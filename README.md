@@ -14,4 +14,14 @@ look into direct links to lyft/uber to avoid using lyfts stand alone API
 
 *******Preventing crude buttons from being created?*******
 
+Change of Plans:
+
+Get wikepedia API key:
+
+Get youtube API key:
+
+Create an app that allows users to enter search criteria for a band. The app will then retrieve band data from
+
+wikepedia and post it on the website and also post and play a random music video from youtube on the website.
+
 
