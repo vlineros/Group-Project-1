@@ -1,27 +1,14 @@
 # Group-Project-1
 
-auto populated array of search params, that uses google maps API to pull up and mark those search params
 
-*******custom img tags for each type of event?*******
+***Musik Mixer***
 
-link to the event info/tickets from the google API 
+Be able to find band/artist information via wikipedia and their top videos via YouTube all in one place!
 
-create google maps layout with directions to a selected event
+Enter in a band/artist in the text box and click the submit button to see the magic happen!
 
-look into direct links to lyft/uber to avoid using lyfts stand alone API
+Click on the Youtube thumbnail to open/watch the video in a new tab.
 
-*******link those directions with the lyft API?*******
+Click on "learn more" to visit the full wikipedia entry for the band/artist.
 
-*******Preventing crude buttons from being created?*******
-
-Change of Plans:
-
-Get wikepedia API key:
-
-Get youtube API key:
-
-Create an app that allows users to enter search criteria for a band. The app will then retrieve band data from
-
-wikepedia and post it on the website and also post and play a random music video from youtube on the website.
-
-
+Firebase logs all the user's search queries.
