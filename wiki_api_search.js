@@ -10,6 +10,7 @@ function parseIntro(targetString) {
 $(document).ready(function() {
   $("#btn").on("click", function(event) {
     event.preventDefault();
+    $("#link-tag").remove();
     var searchObject = $("#user-input")
       .val()
       .trim();
@@ -54,8 +55,9 @@ $(document).ready(function() {
             var bio = response.query.pages[pageId].extract;
             var intro = parseIntro(bio);
             $("#bio-results").text(intro);
-            $("<a>Learn More<a>")
+            $("<a id='link-tag'>Learn More<a>")
               .attr("href", url)
+              .attr("target", "_blank")
               .appendTo($("#bio-link-results"));
           });
         });
