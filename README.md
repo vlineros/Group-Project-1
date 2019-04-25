@@ -1,11 +1,7 @@
 # Group-Project-1
 
-hand-eye game
+MusikMixer
 
-music concerts in your area
+Be able to find band bio via wikipedia and top videos from YouTube all in one place!
 
-something related to our jobs?
-
-Use of some Google API?
-
-list of events based on pre deffined array of items 
+Enter in a band/artist in the text box and click the submit button to see the magic happen!
