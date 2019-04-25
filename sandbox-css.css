@@ -1,0 +1,41 @@
+#img-logo {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -100px;
+    width: 300px;
+    z-index: 999;
+}
+
+#page-headder {
+    background-color: whitesmoke;
+}
+
+body {
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+#btn {
+    background-color: #cd5360;
+    border-color: #cd5360;
+}
+
+.card-body {
+    z-index: 0;
+}
+
+a{
+    color: #cd5360;
+}
+
+.form-control{
+    text-align: center;
+}
+
+a:hover {
+    color: #cd5360;
+}
+  
+a:active {
+    color: #cd5360;
+}
