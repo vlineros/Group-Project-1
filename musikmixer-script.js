@@ -15,7 +15,7 @@ $(document).ready(function() {
     var queryURL =
       "https://www.googleapis.com/youtube/v3/search?q=" +
       searchTerm +
-      "&part=snippet&videoCategoryId=10&order=viewCount&type=video&videoCaption=closedCaption&maxResults=10&key=AIzaSyCAORs5q_pWWueYAyBvhfbLzjJ_nJX5Yu4";
+      "&part=snippet&order=viewCount&videoCatagoryId=10&type=video&maxResults=10&&key=AIzaSyCAORs5q_pWWueYAyBvhfbLzjJ_nJX5Yu4";
 
     $.ajax({
       url: queryURL,
