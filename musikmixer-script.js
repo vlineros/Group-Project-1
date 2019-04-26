@@ -48,12 +48,12 @@ $(document).ready(function() {
         anchorLink.append(bandImage);
         // bandImage.attr('href', imageUrl);
 
-        appearBand.prepend(anchorLink);
-
         var title = $("<p>");
 
         title.text("Title: " + response.items[i].snippet.title);
-        $(appearBand).prepend(title);
+        $(appearBand).append(title);
+
+        appearBand.append(anchorLink);
       }
 
       // https://www.youtube.com/watch?v=
