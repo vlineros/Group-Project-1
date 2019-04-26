@@ -5,7 +5,7 @@ $(document).ready(function() {
     var searchTerm =
       $("#user-input")
         .val()
-        .trim() + "music+videos";
+        .trim() + "+music+videos";
     youtube(searchTerm);
   });
 
