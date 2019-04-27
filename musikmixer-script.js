@@ -32,7 +32,7 @@ database.ref().on("child_added", function (childSnapshot) {
     
 });
 
-$(document).ready(function() {
+
   var appearBand = $("#video-results");
   $("#btn").click(function(event) {
     event.preventDefault();
@@ -92,7 +92,7 @@ $(document).ready(function() {
 
       // https://www.youtube.com/watch?v=
     });
-  }
+ 
 
   //   var results=response.result;
 
