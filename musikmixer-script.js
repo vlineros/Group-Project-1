@@ -1,3 +1,37 @@
+$(document).ready(function () {
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDOo1Vfv_m2lUqlJ_CWgyej4aKDi0bJt14",
+    authDomain: "group-project-1-7d1c9.firebaseapp.com",
+    databaseURL: "https://group-project-1-7d1c9.firebaseio.com",
+    projectId: "group-project-1-7d1c9",
+    storageBucket: "group-project-1-7d1c9.appspot.com",
+    messagingSenderId: "317550528842"
+  };
+  
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+
+  $("#btn").click(function (event) {
+    event.preventDefault();
+    database.ref().push($("#user-input").val().trim());
+
+
+    var band = $("#user-input").val().trim();
+
+  database.ref().push({
+    band_artist: band,
+    
+
+  });
+});
+database.ref().on("child_added", function (childSnapshot) {
+
+  var band = childSnapshot.val().band;
+    
+});
+
 $(document).ready(function() {
   var appearBand = $("#video-results");
   $("#btn").click(function(event) {
