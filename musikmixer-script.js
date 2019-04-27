@@ -88,13 +88,10 @@ database.ref().on("child_added", function (childSnapshot) {
         $(appearBand).append(title);
 
         appearBand.append(anchorLink);
-      }
+     }
 
-      // https://www.youtube.com/watch?v=
     });
- 
+    }
 
-  //   var results=response.result;
 
-  //  $.each(results.items
-});
+    });
