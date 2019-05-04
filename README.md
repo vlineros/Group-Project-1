@@ -12,3 +12,4 @@ Click on the Youtube thumbnail to open/watch the video in a new tab.
 Click on "learn more" to visit the full wikipedia entry for the band/artist.
 
 Firebase logs all the user's search queries.
+https://ericwmcgowan.github.io/Group-Project-1/
