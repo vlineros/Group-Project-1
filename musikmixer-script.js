@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyB3Of5UrLHJIhqhyDJsvqEE_zN2N3rkBCc",
@@ -8,30 +8,30 @@ $(document).ready(function () {
     storageBucket: "project-1-1555381506180.appspot.com",
     messagingSenderId: "670039394224"
   };
-  
+
   firebase.initializeApp(config);
 
   var database = firebase.database();
 
-  $("#btn").click(function (event) {
+  $("#btn").click(function(event) {
     event.preventDefault();
-    database.ref().push($("#user-input").val().trim());
+    database.ref().push(
+      $("#user-input")
+        .val()
+        .trim()
+    );
 
+    var band = $("#user-input")
+      .val()
+      .trim();
 
-    var band = $("#user-input").val().trim();
-
-  database.ref().push({
-    band_artist: band,
-    
-
+    database.ref().push({
+      band_artist: band
+    });
   });
-});
-database.ref().on("child_added", function (childSnapshot) {
-
-  var band = childSnapshot.val().band;
-    
-});
-
+  database.ref().on("child_added", function(childSnapshot) {
+    var band = childSnapshot.val().band;
+  });
 
   var appearBand = $("#video-results");
   $("#btn").click(function(event) {
@@ -49,7 +49,7 @@ database.ref().on("child_added", function (childSnapshot) {
     var queryURL =
       "https://www.googleapis.com/youtube/v3/search?q=" +
       searchTerm +
-      "&part=snippet&order=relevance&viewCount&videoCatagoryId=10&type=video&maxResults=10&&key=AIzaSyCAORs5q_pWWueYAyBvhfbLzjJ_nJX5Yu4";
+      "&part=snippet&order=relevance&viewCount&videoCatagoryId=10&type=video&maxResults=10&&key=AIzaSyA0xBiZHOQfj7CI8kqWe_cnIC8M9CilW0w";
 
     $.ajax({
       url: queryURL,
@@ -88,10 +88,7 @@ database.ref().on("child_added", function (childSnapshot) {
         $(appearBand).append(title);
 
         appearBand.append(anchorLink);
-     }
-
+      }
     });
-    }
-
-
-    }); 
+  }
+});
